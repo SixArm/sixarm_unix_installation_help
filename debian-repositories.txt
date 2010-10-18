@@ -1,0 +1,12 @@
+deb http://ppa.launchpad.net/awn-testing/ubuntu karmic main
+deb-src http://ppa.launchpad.net/awn-testing/ubuntu karmic main
+deb http://ppa.launchpad.net/awn-testing/ubuntu jaunty main
+deb-src http://ppa.launchpad.net/awn-testing/ubuntu jaunty main
+
+# Gnome Do
+deb http://ppa.launchpad.net/do-core/ppa/ubuntu karmic main 
+deb-src http://ppa.launchpad.net/do-core/ppa/ubuntu karmic main 
+
+# Sun VirtualBox
+deb http://download.virtualbox.org/virtualbox/debian jaunty non-free
+deb-src http://download.virtualbox.org/virtualbox/debian jaunty non-free

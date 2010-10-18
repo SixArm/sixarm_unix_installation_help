@@ -1,0 +1,10 @@
+dpkg
+dpkg-dev 
+debhelper 
+devscripts 
+fakeroot
+dh-make 
+lintian
+gcc
+make
+build-essential

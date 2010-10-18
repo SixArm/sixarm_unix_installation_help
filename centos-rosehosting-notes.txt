@@ -1,0 +1,26 @@
+CentOS RoseHosting Notes by Joel
+
+
+
+== Install
+
+Perl
+  http://www.perl.com/download.csp#unix
+
+NcFTP
+  http://www.ncftp.com/download/
+  ftp://ftp.ncftp.com/ncftp/ncftp-3.2.2-src.tar.gz
+
+intltool-update
+  http://www.google.com/search?q=intltool-update
+
+
+== CPAN
+
+CPAN may be outdated.
+  http://cpan.uwinnipeg.ca/dist/CPAN
+
+To clean up:
+  rm /root/.cpan
+  edit /usr/lib/perl5/5.8.8/CPAN/Config.pm
+  perl -MCPAN -e '$ENV{FTP_PASSIVE} = 1; install CPAN'

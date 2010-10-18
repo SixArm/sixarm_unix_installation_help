@@ -1,0 +1,6 @@
+cvs
+git 
+git-core
+tig
+subversion
+mercurial

@@ -1,0 +1,7 @@
+graphicsmagick  
+graphicsmagick-dbg 
+graphicsmagick-imagemagick-compat
+graphicsmagick-libmagick-dev-compat
+libgraphics-magick-perl  
+libgraphicsmagick++1-dev
+libgraphicsmagick1-dev

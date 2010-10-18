@@ -1,0 +1,9 @@
+iputils-arping
+iputils-ping
+dnsutils
+nmap
+wireshark
+traceroute
+putty
+putty-tools
+

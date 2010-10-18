@@ -1,0 +1,107 @@
+
+== Sun Solaris x4150 Demo Install Notes
+
+Joel Parker Henderson
+joelparkerhenderson@gmail.com
+
+
+To demo the Sun Solaris x4150 we will:
+
+  - install JRuby, Ruby, Glassfish, and related software
+  - perform benchmarks
+
+
+Sign in:
+
+  - hostname: x4150demo.technologent.com
+  - username: root
+  - password: get this from our contacts
+
+
+Most of our typical software will be in:
+
+  /usr/sbin
+  /usr/bin
+  /usr/sfw/bin
+  /usr/ccs/bin
+  /usr/local/bin
+  /opt
+
+
+To install:
+
+  jdk
+  homepage: http://java.sun.com/javase/
+  download: http://java.sun.com/javase/downloads/?intcmp=1281
+
+  jruby
+  homepage: http://www.jruby.org
+  download: http://dist.codehaus.org/jruby/1.3.0/jruby-src-1.3.0.tar.gz
+
+  ant
+  homepage: http://ant.apache.org/
+  download: http://www.reverse.net/pub/apache/ant/source/apache-ant-1.7.1-src.tar.gz
+
+  glassfish
+  homepage: http://glassfish.dev.java.net
+  download: https://glassfish.dev.java.net/downloads/v3-preview.html
+  helpbook: http://docs.sun.com/app/docs/coll/1343.9
+
+  netbeans
+  homepage: http://www.netbeans.org
+  download: http://dlc-cdn-rd.sun.com/c1/netbeans/6.7/rc/bundles/netbeans-6.7rc2-ml-solaris-x86.sh
+  launcher: ./netbeans-6.7rc2-ml-solaris-x86.sh --silent
+
+  sun studio
+  filename: SunStudio12mlPrepSys-solaris-x86-200709.tar.bz2
+  filename: SunStudio12ml-solaris-x86-200709-ii.tar.bz2
+
+  emacs
+  homepage: http://www.gnu.org/software/emacs/
+  download: http://ftp.gnu.org/pub/gnu/emacs/emacs-22.3.tar.gz
+
+  rsync
+  homepage: http://www.samba.org/rsync/
+  download: http://www.samba.org/ftp/rsync/rsync-3.0.6.tar.gz
+
+  rubygems
+  homepage: http://rubyforge.org/frs/?group_id=126
+  download: http://rubyforge.org/frs/download.php/57643/rubygems-1.3.4.tgz
+
+  rails
+  homepage: http://www.rubyonrails.org
+  download: http://rubyforge.iasi.roedu.net/files/rails/rails-2.3.2.gem
+  
+  rake
+  homepage: http://rake.rubyforge.org/
+  download: http://rubyforge.org/frs/download.php/56872/rake-0.8.7.gem
+
+  mysql
+  homepage: http://www.mysql.com
+  download: http://mysql.mirrors.pair.com/Downloads/MySQL-5.1/mysql-5.1.35.tar.gz
+
+    groupadd mysql
+    useradd -g mysql mysql
+    gunzip < mysql-VERSION.tar.gz | tar -xvf -
+    cd mysql-VERSION
+    ./configure --prefix=/usr/local/mysql
+    make
+    make install
+    cp support-files/my-medium.cnf /etc/my.cnf
+    cd /usr/local/mysql
+    chown -R mysql .
+    chgrp -R mysql .
+    bin/mysql_install_db --user=mysql
+    chown -R root .
+    chown -R mysql var
+    bin/mysqld_safe --user=mysql &
+
+
+Shortcut to set up your bash path:
+
+  export PATH=/usr/sbin:/usr/bin:/usr/sfw/bin:/usr/ccs/bin:/usr/local/bin:/opt/jdk1.6.0_14/bin:/opt/jruby-1.3.0/bin:/opt/apache-ant-1.7.1/bin
+
+
+
+
+

@@ -1,0 +1,31 @@
+## Festival Text To Speech Synthesis
+
+# Better voices:
+# http://ubuntuforums.org/showthread.php?t=677277
+
+## To install as packages
+festival 
+festival-dev 
+festival-doc
+festival-freebsoft-utils 
+festvox-kallpc16k
+festvox-kdlpc16k 
+festlex-cmu
+festlex-poslex 
+libestools1.2 
+unzip
+stardict-plugin-festival
+
+## To build from source
+autotools-dev
+debhelper
+gawk
+libesd0-dev
+libncurses5-dev
+quilt
+g++
+texinfo
+dpkg-dev
+devscripts
+fakeroot
+

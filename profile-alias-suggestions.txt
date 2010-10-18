@@ -1,0 +1,11 @@
+
+# change to a user's account with the user's own login environment
+alias sul='sudo su -l'
+
+# e => editor of choice
+alias e='emacs --no-spash -fh --no-window-sytem'
+
+# m => mailreader of choice
+alias m='mutt'
+
+# j => jump dir

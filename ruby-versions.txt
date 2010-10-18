@@ -1,0 +1,42 @@
+http://blog.michaelgreenly.com/2007/12/multiple-ruby-version-on-ubuntu.html
+inst build-dep ruby1.8 ruby1.9
+
+ wget ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.6-p272.tar.gz
+ wget ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p174.tar.gz
+ wget ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-p376.tar.gz
+
+
+# consider using:
+#  --enable-shared
+
+ tar -xvzf ruby-1.8.6-*.tar.gz && cd ruby-1.8.6* && ./configure --prefix=/opt/ruby186 --program-suffix=186 && make && make install && cd ..
+ tar -xvzf ruby-1.8.7-*.tar.gz && cd ruby-1.8.7* && ./configure --prefix=/opt/ruby187 --program-suffix=187 && make && make install && cd ..
+ tar -xvzf ruby-1.9.1-*.tar.gz && cd ruby-1.9.1* && ./configure --prefix=/opt/ruby191 --program-suffix=191 --enable-shared && make && make install && cd ..
+
+/etc/profile:
+  PATH=$PATH:/opt/ruby186/bin/
+  PATH=$PATH:/opt/ruby187/bin/
+  PATH=$PATH:/opt/ruby191/bin/
+ 
+Download rubygems, then install in custom locations:
+  export GEM_HOME=/opt/ruby186 && ruby186 setup.rb --prefix=/opt/rubygems186
+  export GEM_HOME=/opt/ruby187 && ruby187 setup.rb --prefix=/opt/rubygems187
+  export GEM_HOME=/opt/ruby191 && ruby191 setup.rb --prefix=/opt/rubygems191
+
+Defaults:
+  ls -1 /opt/ruby191/bin/ | sed -e 's/191//' | xargs -I# ln -sf /opt/ruby191/bin/#191 /usr/local/bin/#
+
+erb191
+gem191
+irb191
+rake191
+rdoc191
+ri191
+ruby191
+testrb191
+
+Cleanup other version:
+ rm /usr/local/bin/ruby
+ rm /usr/local/bin/gem
+ rm /usr/bin/gem1.8 
+

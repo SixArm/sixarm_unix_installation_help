@@ -1,0 +1,9 @@
+To improve startup, you can remove the settings for "quiet" and "splash screen" like this:
+
+  edit /boot/grub/menu.lst file
+
+Find lines like the following:
+
+  kernel /boot/vmlinuz-2.6.17-10-generic ro root=/dev/sda6 quiet splash
+
+Delete the options "quiet" and "splash"

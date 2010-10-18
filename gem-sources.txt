@@ -1,0 +1,4 @@
+http://gems.rubyforge.org
+http://gems.github.com
+http://gems.opscode.com
+http://sixarm.com

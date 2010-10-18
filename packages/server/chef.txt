@@ -1,0 +1,16 @@
+ohai
+couchdb-bin
+couchdb
+chef
+chef-server-slice 
+chef-server
+libxml2
+libxml2-dev
+libxml2-doc
+libxml2-utils
+libxslt-dev                                   -                                                         
+libxslt-ruby
+libxslt-ruby1.8
+libxslt1-dev
+libxslt1.1
+libshadow-ruby1.8

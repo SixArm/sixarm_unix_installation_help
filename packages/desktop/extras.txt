@@ -1,0 +1,56 @@
+libdvdcss2 
+ffmpeg 
+non-free-codecs 
+libtunepimp5-mp3 
+lastfm 
+wine 
+gizmo5
+
+# Some cool games
+frozen-bubble warzone2100 chromium nexuiz
+
+# Amarok media player, Lastfm music client
+amarok libtunepimp5-mp3 lastfm
+
+# The ubuntu-restricted-extras (installs flash, java, multimedia codecs)
+ubuntu-restricted-extras
+
+# Mediatomb UPnP MediaServer with a nice web user interface. Share your media with PS3 and XBOX devices.
+# cat /var/log/mediatomb.log to see what url is the server running point you browser to that url to configure
+mediatomb
+
+# Acrobat Reader
+acroread
+
+googleearth 
+
+picasa
+
+skype
+
+# miro - the free open-source video platform.
+miro
+
+# KDE download manager
+kget
+
+# OSS voip, softphone, video conference tools
+ekiga twinkle gizmo5
+
+# image and publishing tools
+krita scribus inkscape karbon
+
+# Kexi is considered as a long awaited Open Source competitor for Microsoft Access, Filemaker and Oracle Forms.
+kexi
+
+# Kivio is an easy to use diagramming and flowcharting application
+kivio
+
+# KPlato is a project management application.
+kplato
+
+# visual partition editor
+gparted
+
+# remote login using ssh
+sshfs openssh-server

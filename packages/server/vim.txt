@@ -1,0 +1,5 @@
+vim
+vim-full
+vim-scripts
+vim-doc
+vim-latexsuite

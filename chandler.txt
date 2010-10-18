@@ -1,0 +1,32 @@
+
+== Chandler
+
+
+=== Chandler on Ubuntu Hardy
+
+# Ubuntu Hardy ships with libicu38 instead of the required libicu36. 
+# I was able to get the standard deb to install by doing the following 
+echo "deb-src http://us.archive.ubuntu.com/ubuntu/ gutsy-backports main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb-src http://us.archive.ubuntu.com/ubuntu/ gutsy main restricted universe multiverse" >> /etc/apt/sources.list
+apt-get update
+apt-get install build-essential fakeroot dpkg-dev
+apt-get source -t gutsy libicu36
+apt-get build-dep -t gutsy libicu36
+cd icu-3.6/
+dpkg-buildpackage -rfakeroot -b
+cd ..
+dpkg -i libicu36_3.6-3_i386.deb  libicu36-dev_3.6-3_i386.deb
+
+
+=== Chandler on Unix
+
+inst swig openssl m2crypto zope-common
+needed: readline
+not found:  pylucene zanshin wxpython
+contentious:
+ icu libicu38 
+ zope zope2.10
+ bdb libbdb-dev
+ zlib zlibc
+ lucene libclucene-dev
+

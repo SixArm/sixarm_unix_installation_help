@@ -1,0 +1,14 @@
+rake
+rails
+rake
+rspec
+cucumber
+webrat
+gemcutter
+capistrano
+facets
+chef
+ohai
+merb-core
+roman-merb_cucumber
+sixarm_ramp

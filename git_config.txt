@@ -1,0 +1,14 @@
+[alias]
+co = checkout
+s = status
+c = commit -m
+b = branch
+d = diff
+l = log -p
+get = !git pull && git submodule update --init
+df = !git diff $1 | mate
+save = !git stash save
+pop = !git stash pop
+uncommit = !git reset --soft HEAD^
+unstage = !git reset HEAD
+

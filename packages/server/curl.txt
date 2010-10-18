@@ -1,0 +1,4 @@
+libcurl4-dbg 
+libcurl4-dev 
+libcurl4-openssl-dev 
+tclcurl

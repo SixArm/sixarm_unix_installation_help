@@ -1,0 +1,4 @@
+build-essential gcc 
+ruby1.8-dev 
+libhpricot-ruby1.8
+

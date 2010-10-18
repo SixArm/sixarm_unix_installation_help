@@ -1,0 +1,6 @@
+# perl -MCPAN -e shell
+cpan> install Bundle::CPAN
+cpan> reload cpan
+
+CPAN mirror sites:
+http://www.cpan.org/SITES.html

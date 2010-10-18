@@ -1,0 +1,1 @@
+curl http://ack.googlecode.com/svn/tags/latest/ack > /usr/local/bin/ack && chmod 0755 !$

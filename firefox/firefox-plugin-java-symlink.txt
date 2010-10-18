@@ -1,0 +1,7 @@
+# To set up the Firefox Java plug, create a symlink
+# from the Java JRE plugin ns7 shared object
+# to the system's firefox plugins directory.
+
+
+# Example
+sudo ln -s /opt/jdk1.6.0_13/jre/plugin/i386/ns7/libjavaplugin_oji.so /usr/lib/firefox/plugins/

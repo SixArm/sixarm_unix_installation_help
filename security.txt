@@ -1,0 +1,134 @@
+Web Security Tips By Hacker News
+
+	
+5 points by njl 19 days ago | link
+
+sudo apt-get install rkhunter chkrootkit logcheck monit
+
+<p>
+
+rkhunter and chkrootkit will both look for insecure configuration, permissions, and known root kits. rkhunter will also maintain a database of the signatures of your system binaries. I assume there are overlaps between the two. I don't really care, I run both.
+
+<p>
+
+logcheck will watch your logs and email you when something shows up in a log that doesn't match a configurable set of regular expressions. When I add a new piece of software to a system, logcheck goes berserk. I go through the emails I receive and add in new regex's to ignore the harmless notifications until they finally taper out and disappear, only leaving me with the true exceptions.
+
+<p>
+
+Look over the documentation for all three of these, and make sure that they're actually running. Personally, I don't want an email unless something is wrong. If I get an email every day, I'll start to ignore it. I don't think I'd notice if an email I was ignoring didn't show up, so I optimize for no output unless it's something I should read. I chase down the cause of every exception in my logs. No excuses. If it isn't an exception, I add a regex to logcheck.
+
+<p>
+
+I run monit because it is pretty easy to set up, and it sends me an email when a server process gets changed or restarted. It lets me enforce limits on a server process, so I can potentially get warning of an attack as it happening. I suspect monit is nowhere near the most sophisticated tool for this purpose, but it meets my needs very well.
+
+<p>
+
+As for other basic security stuff... 
+
+* Change SSH from default port 22 to something much higher so that you won't get the continuous pounding on the front door that an ssh server on port 22 receives. 
+* Disable root login, as well as password login; use certificates to log in to your machine.
+* Configure servers to listen to 127.0.0.1 whenever you can.
+* Install a software firewall to only allow access to http and ssh anyway.
+
+Unless you've done something stupid with your web app, you've made it incredibly difficult to impossible for script kiddies. If you piss off an elite black-hat, it's probably safe to assume they can own you, and you likely won't know it. So make good backups, with regular offline backups that can't get destroyed by a hacker with a particularly malicious bent.
+
+<h4>
+
+* logwatch to check for suspicious log activity
+* portsentry to watch for suspicious connection activity
+* tripwire to spot modified system files
+
+
+http://OSSEC.net is a host-based intrusion detection system. It does everything you described and more. I am slowly working on a better Web UI with real time alerts.
+
+
+<hr>
+
+Some things we found useful:
+
+* don't have ssh bind to a public interface on. You need to VPN in first and then ssh to the private IP. we only have 80 and 443 open on public interfaces
+
+* portaudit - keeps you up to date if there is an exploit for software that you run, not just "is there an update". portaudit will tell you if there is an unpatched vulnerability out there so you can make a decision on what to do.
+
+* paranoia - don't trust anything. we run WP on a DMZed box that doesn't have access to anything. we mod_proxy all requests to this box from our edge servers. jails are also great for this, give everything the least amount of permissions necessary to run
+
+* monitor your servers, any weird cpu usage or bw. cacti is quite nice
+
+<hr>
+
+In general measures will fall in one of the three classic Protection, Detection and Response & Recovery categories.
+
+1) Protection means hardening your server (system and apps).
+
+The three biggest exploits from the outside are: weak passwords, out-of-date or unpatched applications or system and running unneeded services or unsafe versions when other more secure versions exist.
+
+There are the three main doors or external "attack vectors" in your network. If you protect these three doors then you are 90% or more secure than the average organization. There are other possible doors (for example, you may have a misconfigured server, or a web form that can be exploited with an SQL injection) but these three are almost always present in all exposed networks (in order of importance):
+
+a) Weak passwords: login access with poor passwords (passwords that are words in a 'hackers dictionary', like a simple word or combination like 123456) are probably the single most vulnerability exploited in the Internet.
+
+Solutions:
+
+- Use strong passwords. (most important) Also:
+
+- Log access
+
+- Filter the login access (in the firewall, based on IP origin for example).
+
+- Use a password policy that enforces strong passwords
+
+- Carry your own password brute force / dictionary attack.
+
+b) Unpatched software. Exposed services (web, mail etc) and applications (like a web-based CRM application etc) that are not updated usually ahve well-known vulnerabilities that mallicious hackers look for and have the tools to exploit.
+
+Solutions:
+
+- Update system and application software (ideally automatically, periodically)
+
+- Subscribe to the software security newsletter (if it exists) or keep track of its development
+
+- Run periodically an external vulnerability assessment
+
+c) Unnecessary or unsecured services running. Exposed services or applications that are not used or needed are just other ways for intruders to get in. Sometimes the organizations don't even know that they are there; especially in the past some server installations would by default install unneeded services. Another side of this is to run unsecure applications when there's a perfectly similar solution that is more secure. For example an FTP server transmit all information (including passwords) in clear text over the network, so an encrypted solution like SFTP/SCP is preferred.
+
+Solutions:
+
+- Remove unnecessary software packages.
+
+- Run periodically an external port scan (see nmap for example)
+
+- Run periodically an external vulnerability assessment (see Nessus, Qualys or have an independent third-party to do it).
+
+- Look for safer alternatives to server software.
+
+As other protection and hardening measures:
+
+- Use firewall to block by defaults all ports that are not in use, implement basic safety measures (for example avoid spoofed addresses; no connections from the outside pretending to be from an internal IP address) and rules to mitigate DoS (limit the maximum number of connections at a given time from a particular IP address). Linux’ netfilter (iptables) can do all this.
+
+- Protect management login pages (including ssh) with port-knocking and/or source-based IP filtering.
+
+- Web server (apache): take off its signatures, deny / access, explicitly allow access, uninstall unused modules, limit upload/post sizes, check with benchmark tool (ab etc), check vulnerabilities with specialized tools (nikto, others), consider mod_security, optimize web server (this helps in case of high traffic or DoS): enable compression etc (see YSlow).
+
+- Security by obscurity: this is fine as long as you know what you're doing. For example, change the ssh port from 22 to something else as other people suggested.
+
+Besides the server you also want to protect its availability. Probably the simplest and cheapest thing is to have a backup server and use DNS fail over (the hardest part is synchronizing databases).
+
+2) Detection.
+
+There are several general tools and ideas for intrusion detection:
+
+- Logs. Logs are a sysadmin’s best friend. There are auxiliary tools or whole systems to manage/archive logs etc, from parsers to complex apps like the ones offered by intellitactics for example. Tools like Linux’ logwatch can email periodically status messages.
+
+- Monitoring tools. Sudden unexplained big increases in CPU or bandwidth may indicate a security problem. Monitor your server from the inside (there are many tools for Linux: cacti, monit etc) as well as from the outside with an uptime server monitor (pingdom, mon.itor.us, wasitup.com etc) as well as a change monitor (ChangeDetection.com etc).
+
+- Intrusion Detection Systems (IDS). I don’t recommend in general using a network IDS (like snort etc) for a server basically because you’ll get all these alerts and you won’t know what to do with them and at the end you’ll ignore them. Do install a host-based IDS like a checksum application (tripwire or afick for example).
+
+- Rootkits (rkhunter etc): they will detect basic exploits.
+
+3) Recovery. This is arguably the most important aspect. For a single server it means mostly having a good backup strategy. I like to use VPS’ and have daily and weekly backups of the whole VPS snapshot both in the data center as off-site. Recovery with a VPS is in principle (barring un-committed db data etc) as simple as restoring its snapshot backup.
+
+Also: I have licensed tools and experience in security assessments; I can do a quick check of your web server and give you some recommendations at no cost.
+
+
+<p>
+
+http://www.freebsd.org/doc/en/books/handbook/securing-freebsd.html

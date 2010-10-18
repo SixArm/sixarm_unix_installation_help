@@ -1,0 +1,2 @@
+build-essential gcc ruby1.8-dev
+libmagick9-dev

@@ -1,0 +1,11 @@
+opera
+djvulibre-plugin
+java-gcj-compat
+xine-plugin
+gxineplugin
+kaffeine-mozilla 
+mozilla-mplayer 
+mozilla-helix-player 
+gecko-mediaplayer 
+mozplugger
+mozilla-bonobo

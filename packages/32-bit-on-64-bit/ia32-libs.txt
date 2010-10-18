@@ -1,0 +1,10 @@
+ia32-libs
+lib32gcc1
+libc6-i386
+lib32z1
+lib32stdc++6
+lib32asound2
+lib32ncurses5
+lib32z1-dev 
+lib32bz2-dev
+ia32-libs-gtk

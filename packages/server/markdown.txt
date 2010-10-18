@@ -1,0 +1,3 @@
+build-essential gcc ruby1.8-dev
+gettext
+markdown

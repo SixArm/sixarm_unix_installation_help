@@ -1,0 +1,18 @@
+
+== Glassfish Setup for Ubuntu, Apache, JRuby, Rails
+
+Installing Glassfish V3 on Ubuntu
+http://skytteren.blogspot.com/2009/05/installing-glassfish-v3-on-ubuntu.html
+
+Sun GlassFish Enterprise Server v3 Preview Quick Start Guide
+http://docs.sun.com/app/docs/doc/820-7689/aboaa?a=view
+
+Fronting GlassFish v3 with Apache httpd
+http://weblogs.java.net/blog/jfarcand/archive/2008/08/fronting_glassf.html
+
+Getting Started Using JRuby on the GlassFish Application Server
+http://wiki.glassfish.java.net/Wiki.jsp?page=GettingStartedGuide
+
+Deploy and Run Rails on GlassFish v3
+http://wiki.glassfish.java.net/Wiki.jsp?page=DeployAndRunRailsOnGlassFishV3
+

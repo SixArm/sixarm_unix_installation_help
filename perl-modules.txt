@@ -1,0 +1,43 @@
+###
+#
+#  Perl Modules that I typically use
+#
+##
+
+## General
+Archive::Extract
+Archive::Tar
+ExtUtils::Install
+File::Fetch
+IO::Zlib
+IPC::Cmd
+Locale::Maketext::Simple
+Log::Message
+Module::CoreList
+Module::Load
+Module::Load::Conditional
+Module::Loaded
+Module::Pluggable
+Object::Accessor
+Package::Constants
+Params::Check
+Parse::CPAN::Meta
+Term::UI
+
+## Testing
+Test::Harness
+Test::Warn
+
+## Mechanize for website management
+WWW::Mechanize
+WWW::Mechanize::FAQ
+WWW::Mechanize::Plugin::AutoWrite
+WWW::Mechanize::Timed
+WWW::Mechanize::TreeBuilder
+Test::WWW::Mechanize::Driver
+Test::WWW::Mechanize::Driver::Manual
+
+## Nagios
+Nagios::Plugin
+Nagios::Plugin::Config
+

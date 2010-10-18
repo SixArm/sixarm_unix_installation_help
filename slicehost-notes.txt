@@ -1,0 +1,7 @@
+
+== Locales
+
+http://www.linuxquestions.org/questions/debian-26/perl-warning-setting-locale-failed.-system-wide-problem-407835/
+http://blogs.law.harvard.edu/hoanga/2008/04/10/fixing-that-really-irritating-perl-warning-setting-locale-failed-on/
+sudo locale-gen
+

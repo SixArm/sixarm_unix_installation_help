@@ -1,0 +1,49 @@
+
+<h3>.Xdefaults:</h3>
+
+<pre>
+XTerm*termName: xterm-256color
+URxvt*termName: rxvt-256color
+</pre>
+
+
+<h3>.vimrc</h3>
+
+<pre>
+" 256 colors only if you can handle it
+if $TERM =~ "-256color"
+  set t_Co=256
+  colorscheme zenburn
+endif
+</pre>
+
+
+<h3>.screenrc</h3>
+
+<pre>
+# term
+term xterm-256color
+
+# main options
+altscreen on
+attrcolor b ".I"
+defbce "on"
+
+# some termcaps
+termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo rxvt-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+</pre>
+
+<h3>Links</h3>
+
+256 color mode for Linxu:
+<br>http://robmeerman.co.uk/_media/unix/256colors2.pl
+
+Workaround for Mutt colors:
+<br>http://bbs.archlinux.org/viewtopic.php?id=67464
+
+Perl script to display colors:
+<br>http://robmeerman.co.uk/_media/unix/256colors2.plhttp://robmeerman.co.uk/_media/unix/256colors2.pl
+
+Unknown Terminal Type "linux" and Similar
+<br>http://www.unixguide.net/linux/faq/09.02.shtml

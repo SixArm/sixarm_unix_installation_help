@@ -1,0 +1,1 @@
+aptitude -y update && aptitude -y upgrade && aptitude -y dist-upgrade && aptitude -y autoclean

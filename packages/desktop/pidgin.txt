@@ -1,0 +1,13 @@
+## Pidgin IM
+pidgin 
+pidgin-data 
+pidgin-dev 
+pidgin-encryption 
+pidgin-extprefs
+pidgin-facebookchat 
+pidgin-festival 
+pidgin-hotkeys 
+pidgin-libnotify 
+pidgin-otr 
+pidgin-plugin-pack 
+pidgin-privacy-please

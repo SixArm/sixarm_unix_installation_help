@@ -1,0 +1,3 @@
+gnome-do 
+gnome-do-plugins
+gnome-do-docklets 

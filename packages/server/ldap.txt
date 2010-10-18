@@ -1,0 +1,4 @@
+libpam-ldap
+libnss-ldap
+nss-updatedb
+libnss-db nscd
