@@ -1,6 +1,8 @@
 To improve startup, you can remove the settings for "quiet" and "splash screen" like this:
 
-  edit /boot/grub/menu.lst file
+  cd /boot/grub
+  grep splash
+  grep quiet
 
 Find lines like the following:
 
