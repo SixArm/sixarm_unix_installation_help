@@ -42,3 +42,4 @@ git://github.com/zdennis/caching_presenter
 git://gitorious.org/git-cola/mainline.git   
 git://gitorious.org/willgit/mainline.git/
 git://repo.or.cz/gitmagic.git
+git://github.com/kristopolous/TickTick.git
