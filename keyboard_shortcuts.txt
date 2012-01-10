@@ -1,0 +1,6 @@
+apt-get install wmctrl
+
+Bind Windows key to raise particular programs:
+  f: wmctrl -a ' - Mozilla Firefox'
+  c: wmctrl -a ' - Chromium'
+  r: wmctrl -a ' - JetBrains RubyMine'
