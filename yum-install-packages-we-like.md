@@ -3,11 +3,28 @@
 
 Libraries:
 
-    yum install libjpeg libjpeg-devel libpng libpng-devel libxml2 libxml2-devel libxslt libxslt-devel zlib zlib-devel
+    yum install -y
+      lcms lcms-devel   
+      libICE libICE-devel
+      libjpeg libjpeg-devel
+      libpng libpng-devel
+      libSM libSM-devel
+      libtiff libtiff-devel 
+      libxml2 libxml2-devel
+      libxslt libxslt-devel
+
+    yum install -y
+      curl curl-devel
+      freetype freetype-devel
+      ghostscript ghostscript-devel
+      openssl openssl-devel
+      zlib zlib-devel
 
 Sysop:
 
-    yum install bzip2 emacs git screen tar wget tidy
+    yum install -y
+      bzip2 bzip2-devel
+      emacs git screen tar wget tidy
 
 Development:
 
@@ -102,11 +119,60 @@ Languages:
       perl-libwww-perl
       perl-libxml-perl
 
+    yum install
+      xorg-x11-filesystem
+      xorg-x11-fonts-Type1
+      xorg-x11-fonts-base
+      xorg-x11-fonts-misc
+      xorg-x11-fonts-truetype
+      xorg-x11-proto-devel
+      xorg-x11-resutils
+      xorg-x11-server-Xorg
+      xorg-x11-server-Xvfb
+      xorg-x11-server-Xvnc-source
+      xorg-x11-server-sdk
+      xorg-x11-server-utils
+      xorg-x11-util-macros
+      xorg-x11-utils
+      xorg-x11-xbitmaps
+      xorg-x11-xfwp
+      xorg-x11-xinit
+      xorg-x11-xkb-utils
+      xorg-x11-xsm
+      xorg-x11-xtrans-devel
+
 Mail:
 
     yum install postfix mutt
 
 Databases:
 
-    yum install mysql postgresql sqlite
+    yum install -y 
+      mysql mysql-devel
+      postgresql postgresql-devel
+      sqlite sqlite-devel
 
+Apache:
+
+    yum install -y
+      httpd httpd-devel
+      apr apr-devel
+      apr-util apr-util-devel
+
+Graphics:
+
+    yum install -y
+      libjpeg libjpeg-devel
+      libpng libpng-devel
+      libtiff libtiff-devel
+
+    yum install -y
+      freetype freetype-devel
+      ghostscript ghostscript-devel
+
+    yum install -y
+      ImageMagick
+      ImageMagick-devel
+      ImageMagick-c++
+      ImageMagick-c++-devel
+      ImageMagick-perl

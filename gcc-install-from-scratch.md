@@ -44,7 +44,6 @@ MPFR is the GNU Multiple-precision floating-point rounding library. It depends o
 ## MPC
 
 MPC is the GNU Multiple-precision C library. It depends on GMP and MPFR.
-
     export k=mpc v=0.8.1
     wget ftp://gcc.gnu.org/pub/gcc/infrastructure/$k-$v.tar.gz
     tar zxvf $k-$v.tar.gz
@@ -56,7 +55,7 @@ MPC is the GNU Multiple-precision C library. It depends on GMP and MPFR.
 
 ## ELF
 
-ELF is a library takes provides architecture-independent size and endian support.
+ELF stands for Executable and Linkable Format. This library takes provides architecture-independent size and endian support.
 
     export k=libelf v=0.8.13
     wget http://www.mr511.de/software/$k-$v.tar.gz
@@ -100,4 +99,3 @@ We must use the full path to configure, must disable shared, and must not set li
       --with-fpmath=sse
     make && make install
 
-k
