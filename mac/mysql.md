@@ -14,6 +14,8 @@ We'll use brew.
 
 See http://stackoverflow.com/questions/4359131/brew-install-mysql-on-mac-os
 
+See also http://www.frederico-araujo.com/2011/07/30/installing-rails-on-os-x-lion-with-homebrew-rvm-and-mysql/
+
 First uninstall earlier versions:
 
     brew remove mysql
@@ -56,14 +58,40 @@ To run as, for instance, user "mysql", you may need to `sudo`:
 
     sudo mysql_install_db ...options...
 
+## Start
+
 Start mysqld manually with:
 
     mysql.server start
 
-    Note: if this fails, you probably forgot to run the first two steps up above
+
+### Troubleshooting
+
+If start fails the first time, perhaps you forgot to run the first two steps up above?
+
+Log:
+
+    cd /usr/local/var/mysql
+    ls *.err
+
+If the log shows this error:
+
+    InnoDB: File name ./ibdata1
+    InnoDB: File operation call: 'open'.
+    InnoDB: Cannot continue operation.
+
+Then it's a permission issue.
+
+To fix it:
+
+   chown -R mysql .
+
 
 A "/etc/my.cnf" from another install may interfere with a Homebrew-built
 server starting up correctly.
+
+
+## Connect
 
 To connect:
 
@@ -119,3 +147,16 @@ Summary:
     cd /usr/local/Cellar/mysql/5.5.20/mysql-test ; perl mysql-test-run.pl
 
     Please report any problems with the /usr/local/Cellar/mysql/5.5.20/scripts/mysqlbug script!
+
+## Troubleshooting
+
+If you have problems with mysql "cannot connect to /tmp/mysql.sock"
+then create a file /usr/local/etc/my.cnf and add this:
+
+[client]
+port = 3306
+socket = /tmp/mysql.sock
+[mysqld]
+bind-address = 127.0.0.1
+port = 3306
+socket = /tmp/mysql.sock

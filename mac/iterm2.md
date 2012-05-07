@@ -3,11 +3,43 @@
 iTerm2 is a better terminal app than the Mac's built in app.
 
 
+## Preferences summary
+
+<ul>
+  <li>iTerm Preferences
+  <ul>
+    <li>Keys top tab
+    <ul>
+      <ul>Left-option key acts as +Esc
+    </ul>
+    <li>Profiles top tab
+    <ul>
+      <li>Terminal tab 
+      <ul>
+        <li>Silence bell (check it)
+      </ul>
+    </ul>
+    <li>Appearance tab
+    <ul>
+      <li>Window & Tab Titles area
+      <ul>
+        <li>uncheck all
+      </ul>
+    </ul>
+  </ul>
+</ul>
+
+
 ## Meta
 
 To make the Mac "option" key send "Meta" to terminals:
 
   * iTerm -> Preferences -> Profiles top tab -> Keys tab -> Left-option key acts as +Esc
+
+
+## Turn off bell
+
+  * iTerm -> Preferences -> Profiles top tab -> Terminal tab -> Silence bell (check it)
 
 
 ## Term Tab Titles
