@@ -129,3 +129,35 @@ To play it safe, we can also turn on the Ubuntu firewall:
     sudo ufw enable
     sudo ufw allow 22
     sudo ufw allow 80
+
+
+## Apache
+
+To enable Apache mods like mod_rewrite and the RewriteEngine:
+
+    a2enmod rewrite
+
+## SixArm repos
+
+Repos:
+
+    mkdir -p /opt/sixarm && cd /opt/sixarm
+    for x in \
+      sixarm_bash_etc_files \
+      sixarm_zsh_etc_files \
+      sixarm_debian_dpkg_scripts \
+      sixarm_git_gitconfig \
+      sixarm_git_scripts \
+      sixarm_mysql_scripts \
+      sixarm_postgresql_scripts \
+      sixarm_postfix_scripts \
+      sixarm_ruby_gem_scripts \
+      sixarm_unix_shell_scripts \
+      sixarm_unix_dot_files \
+      ; do git clone "git://github.com/SixArm/$x.git"; done
+
+Append <code>/etc/bash.bashrc</code>
+
+    echo "[ -e /etc/environment ] && source /etc/environment" >> /etc/bash.bashrc
+    echo "[ -e /etc/bash.aliases ] && source /etc/bash.aliases" >> /etc/bash.bashrc
+
