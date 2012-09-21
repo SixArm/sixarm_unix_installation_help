@@ -1,0 +1,16 @@
+##
+# Varnish setup
+#
+# This file goes in /etc/default/varnish
+#
+# Also needs /etc/varnish/default.vcl
+#
+# From http://abdul-barek-rails.blogspot.com/2012/07/integrate-http-reverse-proxy-cache.html
+##
+
+DAEMON_OPTS="-a :80 \
+             -T localhost:6082 \
+             -f /etc/varnish/default.vcl \
+             -S /etc/varnish/secret \
+             -s file,/var/lib/varnish/$INSTANCE/varnish_storage.bin,1G"
+
