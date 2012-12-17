@@ -10,9 +10,20 @@ I see the typical warning:
     ECDSA key fingerprint is 31:66:15:d2:19:41:2b:09:8a:8f:9f:bd:de:c6:ff:07.
     Are you sure you want to continue connecting (yes/no)? 
 
-### How do I verify the fingerprint before I sign in?
+## How do I verify the fingerprint before I sign in?
 
-Use the Amazon ec2-get-console-output command.
+
+### Option 1: Use the Amazon EC2 dashboard
+
+* Go to https://console.aws.amazon.com
+* Tap "EC2" link.
+* Tap "Instances" in the left column
+* Tap the instance name you want
+* Tap the select button "Actions" and choose "Console Output"
+* In the console output, you should see the keys being generated
+
+
+### Option 2: Use the Amazon ec2-get-console-output command
 
 Use your EC2 private key pem file, certificate pem file, region, and instance:
 
