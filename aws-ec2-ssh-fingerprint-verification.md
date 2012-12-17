@@ -1,4 +1,4 @@
-Amazon AWS EC2 server SSH fingerprint verification 
+# Amazon AWS EC2 server SSH fingerprint verification 
 
 
 When I create a new Amazon EC2 server, I connect to it using ssh as usual.
@@ -10,7 +10,7 @@ I see the typical warning:
     ECDSA key fingerprint is 31:66:15:d2:19:41:2b:09:8a:8f:9f:bd:de:c6:ff:07.
     Are you sure you want to continue connecting (yes/no)? 
 
-How do I verify the fingerprint before I sign in?
+### How do I verify the fingerprint before I sign in?
 
 Use the Amazon ec2-get-console-output command.
 
