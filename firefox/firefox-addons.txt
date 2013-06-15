@@ -1,3 +1,8 @@
+ScreenGrab Fixed
+https://addons.mozilla.org/en-US/firefox/addon/screengrab-fix-version/developers
+Screengrab! saves webpages as images 
+We donated.
+
 Vacuum Places Improved 1 
 https://addons.mozilla.org/en-US/firefox/addon/13878
 Speed up your Firefox places, bookmarks, and startup time by cleaning up Firefox's databases.
@@ -17,6 +22,7 @@ https://addons.mozilla.org/en-US/firefox/addon/220
 NoScript
 Protect yourself against XSS and Clickjacking
 https://addons.mozilla.org/en-US/firefox/addon/722
+We donated.
 
 Adblock Plus
 Get rid of ads and banners 
@@ -30,9 +36,10 @@ HackBar
 https://addons.mozilla.org/en-US/firefox/addon/3899
 Simple security audit and penetration test tool.
 
-TableTools
-https://addons.mozilla.org/en-US/firefox/addon/2637
+TableTools2
+https://addons.mozilla.org/en-US/firefox/addon/tabletools2
 Sorts, filters or copies any HTML table.
+We donated.
 
 SQLite Manager
 https://addons.mozilla.org/en-US/firefox/addon/5817
@@ -45,6 +52,7 @@ Remove all the cookies of currently opened site.
 Dust-Me Selectors
 https://addons.mozilla.org/en-US/firefox/addon/5392
 Finds unused CSS selectors. 
+We donated.
 
 Inline Code Finder for Firebug
 https://addons.mozilla.org/en-US/firefox/addon/9641
@@ -53,10 +61,6 @@ add-on to Firebug, to be able to find HTML elements with inlines.
 iMacros for Firefox
 https://addons.mozilla.org/en-US/firefox/addon/3863
 Automate Firefox: record and replay repetitious work.
-
-Window Resizer
-https://addons.mozilla.org/en-US/firefox/addon/1985
-Resize your browser to various standard resolution sizes.
 
 RESTClient
 https://addons.mozilla.org/en-US/firefox/addon/9780
@@ -71,56 +75,57 @@ https://addons.mozilla.org/en-US/firefox/addon/1095
 An interactive editor for XPath expressions. 
 
 Video DownloadHelper
-Download and convert Web videos from hundreds of YouTube-like sites
 https://addons.mozilla.org/en-US/firefox/addon/3006
-
-FireCrystal
-https://addons.mozilla.org/en-US/firefox/addon/13847
-Firefox debugger allows users to record their actions on a web page.
+Download and convert Web videos from hundreds of YouTube-like sites
 
 DownThemAll
 Download manager/accelerator
 https://addons.mozilla.org/en-US/firefox/addon/201
+We donated.
 
 GreaseMonkey
-Allows you to customize the way a webpage displays using small bits of JavaScript
 https://addons.mozilla.org/en-US/firefox/addon/748
+Allows you to customize the way a webpage displays using small bits of JavaScript
+We donated (maybe-- did PayPal succeed?)
 
 Firebug
-Development tools to debug CSS, HTML, and JavaScript live in any web page.
 https://addons.mozilla.org/en-US/firefox/addon/1843
+Development tools to debug CSS, HTML, and JavaScript live in any web page.
+We donated.
 
 AutoPager
-Automatically loads the next page when you reach the end of the page.
 https://addons.mozilla.org/en-US/firefox/addon/4925
+Automatically loads the next page when you reach the end of the page.
+We donated.
 
-Web Of Trust
+Web Of Trust - Safe Surfing
 https://addons.mozilla.org/en-US/firefox/addon/3456
 Protects you from risky websites that try to scam visitors, deliver malware or send spam. 
+We donated.
 
 Web Developer
-Adds a menu and a toolbar with various web developer tools.
 https://addons.mozilla.org/en-US/firefox/addon/60
+Adds a menu and a toolbar with various web developer tools.
+We donated.
 
 United States English Dictionary
 English United States (en-US) spellchecking dictionary.
 https://addons.mozilla.org/en-US/firefox/addon/3497
 
 ColorZilla
-Advanced Eyedropper, ColorPicker, Page Zoomer and other colorful goodies.
 https://addons.mozilla.org/en-US/firefox/addon/271
+Advanced Eyedropper, ColorPicker, Page Zoomer and other colorful goodies.
+We donated.
 
 Live HTTP Headers
-Developer tool to view HTTP transmission headers
 https://addons.mozilla.org/en-US/firefox/addon/3829
+Developer tool to view HTTP transmission headers
 
 ShowIP
-Show the IP address of the current page in the status bar, and query custom services by IP and hostname.
 https://addons.mozilla.org/en-US/firefox/addon/590
+Show the IP address of the current page in the status bar, and query custom services by IP and hostname.
 
 Save File To
-Save links, images and web pages to user-defined folders and their sub-folders straight from context menu. 
 https://addons.mozilla.org/en-US/firefox/addon/4902
+Save links, images and web pages to user-defined folders and their sub-folders straight from context menu. 
 
-Minimalist Gmail
-http://mattconstantine.com/mg
