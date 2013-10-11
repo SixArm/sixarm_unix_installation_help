@@ -42,8 +42,8 @@ mkdir -p $top/science/{anthropology,biology,physics,sociology}
 # Mutt email reader
 mkdir -p $top/cs/mutt && cd $_ && 
 wget http://www.mutt.org/doc/manual.txt \
-     http://www.mutt.org/changes.html \
-     http://www.mutt.org/doc/man_page.html
+     http://www.mutt.org/doc/man_page.html \
+     http://www.mutt.org/changes.html 
 
 # Mocha testing framework
 mkdir -p $top/cs/ruby/mocha && cd $_ && 
