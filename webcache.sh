@@ -40,21 +40,26 @@ mkdir -p $top/religion/{buddhism,christianity,judaism,hinduism,zen}
 mkdir -p $top/science/{anthropology,biology,physics,sociology}
 
 # Mutt email reader
-mkdir -p $top/cs/mutt && cd $_ && 
+mkdir -p $top/cs/mutt && cd $_ 
 wget http://www.mutt.org/doc/manual.txt \
      http://www.mutt.org/doc/man_page.html \
      http://www.mutt.org/changes.html 
 
-# Mocha testing framework
+# Ruby
+mkdir -p $top/cs/ruby && cd $_
+curl -s http://www.ruby-doc.org/downloads/ruby_2_0_core_rdocs.tgz | tar zxf -
+curl -s http://www.ruby-doc.org/downloads/ruby_2_0_stdlib_rdocs.tgz | tar zxf -
+curl -s http://www.ruby-doc.org/downloads/learning-ruby.tar.gz | tar zxf -
+
+# Ruby Mocha testing framework
 mkdir -p $top/cs/ruby/mocha && cd $_ && 
 $mirror docs http://gofreerange.com/mocha/docs/
 
-# Rails documentation
-mkdir -p $top/cs/ruby/rails && cd $_ &&
-$mirror apidock http://apidock.com/rails/ &&
+# Ruby On Rails documentation
+mkdir -p $top/cs/ruby/rails && cd $_ 
+$mirror apidock http://apidock.com/rails/
 $mirror guides http://guides.rubyonrails.org
 
-curl -s http://www.ruby-doc.org/downloads/ruby_2_0_core_rdocs.tgz | tar zxf -
-curl -s http://www.ruby-doc.org/downloads/learning-ruby.tar.gz | tar zxf -
-curl -s http://www.ruby-doc.org/downloads/ruby_2_0_stdlib_rdocs.tgz | tar zxf -
+# Ruby Minitest
+mkdir -p $top/cs/ruby/minitest && cd $_ 
 curl -s http://mattsears.com/articles/2011/12/10/minitest-quick-reference -o minitest-quick-reference-by-matt-sears.html
