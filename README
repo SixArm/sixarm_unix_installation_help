@@ -1,5 +1,9 @@
 SixArm.com » Unix » Installation help notes for our internal systems
 
+Read me first:
+
+  * <a href="security.txt">security.txt</a>
+  
 To create a new system:
 
   * <a href="virtualbox.md">virtualbox.md</a> for VirtualBox
