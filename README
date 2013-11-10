@@ -1,1 +1,38 @@
 SixArm.com » Unix » Installation help notes for our internal systems
+
+To create a new system:
+
+  * <a href="virtualbox.md">virtualbox.md</a> for VirtualBox
+  * <a href="aws.md">aws.md</a> for Amazon Web Services
+  * <a href="aws-ec2-ssh-fingerprint-verification.md">aws-ec2-ssh-fingerprint-verification.md</a> to verify AWS fingerprints
+  * <a href="centos-rosehosting-notes.txt">centos-rosehosting-notes.txt</a> for older CentOS using Rose Hosting
+  * <a href="aptitude-update-upgrade-autoclean.txt">aptitude-update-upgrade-autoclean.txt</a> to upgrade Debian/Ubuntu to current
+  
+Setups:
+
+  * <a href="fresh.md">fresh.md</a> to set up a fresh system with our SixArm git clones etc. (caution: needs updating)
+  * <a href="debian-repositories.txt">debian-repositories.txt</a> (TODO: refactor these to their own files)
+  
+Configurations:
+
+  * <a href="dpkg-reconfigure-debconf-readline.sh">dpkg-reconfigure-debconf-readline.sh</a> if we get errors about readline
+  * <a href="color_notes.txt">color_notes.txt</a> on XTerm, TERM, etc.
+
+Applications:
+
+  * <a href="chandler.txt">chandler.txt</a>
+  * <a href="emacs.md">emacs.md</a> (better to use emacs starter kit if available)
+  * <a href="gcc-install-from-scratch.md">gcc-install-from-scratch.md</a> for GCC in extreme atypcal cases
+  * <a href="gem-sources.txt">gem-sources.txt</a> for Ruby gem sources
+  * <a href="git_branch_parser.sh">git_branch_parser.sh</a> (better to use oh-my-zsh if available)
+  
+Clones:
+
+  * <a href="git_projects.txt">git_projects.txt</a> we use
+
+Clones loop:
+
+    cd /opt
+    cat sixarm_unix_installation_help | xargs -I{} git clone --depth 1 {}
+    
+  
