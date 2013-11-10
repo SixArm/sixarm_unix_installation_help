@@ -7,6 +7,7 @@ To create a new system:
   * <a href="aws-ec2-ssh-fingerprint-verification.md">aws-ec2-ssh-fingerprint-verification.md</a> to verify AWS fingerprints
   * <a href="centos-rosehosting-notes.txt">centos-rosehosting-notes.txt</a> for older CentOS using Rose Hosting
   * <a href="aptitude-update-upgrade-autoclean.txt">aptitude-update-upgrade-autoclean.txt</a> to upgrade Debian/Ubuntu to current
+  * <a href="yum-install-packages-we-like.md">yum-install-packages-we-like.md</a> for RedHat
   
 Setups:
 
