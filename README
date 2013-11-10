@@ -18,6 +18,12 @@ Configurations:
   * <a href="dpkg-reconfigure-debconf-readline.sh">dpkg-reconfigure-debconf-readline.sh</a> if we get errors about readline
   * <a href="color_notes.txt">color_notes.txt</a> on XTerm, TERM, etc.
 
+Languages:
+
+  * <a href="ruby-build.sh">ruby-build.sh</a> 
+        ruby-build --definitions
+        ruby-build 2.0.0-p247 /opt/rubies/2.0.0-p247
+        
 Applications:
 
   * <a href="chandler.txt">chandler.txt</a>
