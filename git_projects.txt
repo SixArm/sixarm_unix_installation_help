@@ -26,6 +26,14 @@ git://github.com/opscode/chef
 git://github.com/opscode/cookbooks.git
 git://github.com/qrush/metric_fu
 git://github.com/rails/rails.git
+git://github.com/rails/arel.git
+git://github.com/rails/journey.git
+git://github.com/rails/sprockets-rails.git
+git://github.com/rails/sass-rails.git
+git://github.com/rails/coffee-rails.git
+git://github.com/rails/activerecord-deprecated_finders.git
+git://github.com/sstephenson/ruby-build.git
+git://github.com/sstephenson/rbenv.git
 git://github.com/redinger/validation_reflection
 git://github.com/sebastien/sink.git
 git://github.com/sjlombardo/acts_as_network
