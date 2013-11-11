@@ -36,6 +36,7 @@ Applications:
   * <a href="gcc-install-from-scratch.md">gcc-install-from-scratch.md</a> for GCC in extreme atypcal cases
   * <a href="gem-sources.txt">gem-sources.txt</a> for Ruby gem sources
   * <a href="git_branch_parser.sh">git_branch_parser.sh</a> (better to use oh-my-zsh if available)
+  * <a href="sublime.md">sublime.md</a> for Sublime Text editor
   
 Clones:
 
