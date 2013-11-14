@@ -29,3 +29,5 @@ The Guest Additions are designed to be installed inside a virtual machine after 
 After installing an OS:
 
   * Virtualbox > Devices > Install Guest Additions...
+
+<a href="http://www.virtualbox.org/manual/ch04.html#idp55630656">Guest Additions</a> manual 
