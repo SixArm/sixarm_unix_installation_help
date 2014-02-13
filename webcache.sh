@@ -39,6 +39,10 @@ mkdir -p $top/philosophy/{analytic,continental}
 mkdir -p $top/religion/{buddhism,christianity,judaism,hinduism,zen}
 mkdir -p $top/science/{anthropology,biology,physics,sociology}
 
+# Asana project management guide
+mkdir -p $top/pm && cd $_ 
+$mirror https://asana.com/guide/
+
 # Mutt email reader
 mkdir -p $top/cs/mutt && cd $_ 
 wget http://www.mutt.org/doc/manual.txt \
