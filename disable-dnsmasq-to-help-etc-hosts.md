@@ -11,3 +11,7 @@ The solution is to disable dnsmasq in the Networkmanager configuration file.
 Open `/etc/NetworkManager/NetworkManager.conf` and comment out the line:
 
     dns=dnsmasq
+
+The accepted answer works in 12.04 through 13.04 by disabling dnsmasq, but it stopped working for me in 13.10. I found the following new solution for 13.10.
+
+Edit `/etc/default/dnsmasq` and change `ENABLED=1` to `ENABLED=0` then restart.
