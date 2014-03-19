@@ -1,4 +1,4 @@
-SixArm.com » Unix » Installation help notes for our internal systems
+<h1>.SixArm.com » Unix » <br> Installation help notes for our internal systems
 
 Read me first:
 
@@ -17,6 +17,8 @@ Setups:
 
   * <a href="fresh.md">fresh.md</a> to set up a fresh system with our SixArm git clones etc. (caution: needs updating)
   * <a href="debian-repositories.txt">debian-repositories.txt</a> (TODO: refactor these to their own files)
+  * <a href="disable-dnsmasq-to-help-etc-hosts.md">disable-dnsmasq-to-help-etc-hosts.md</a> 
+
   
 Configurations:
 
