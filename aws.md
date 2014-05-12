@@ -49,8 +49,8 @@ Choose "Classic"
 
 Choose an AMI:
 
-  * Choose the current Ubuntu (Ubuntu Server Cloud Guest 11.10, 64) 64-bit. 
-  * We choose this one because it's easy, widely known in the Ruby community, and matches our development environment. 
+  * Choose the current Ubuntu (Ubuntu Server Cloud Guest 11.10, 64) 64-bit.
+  * We choose this one because it's easy, widely known in the Ruby community, and matches our development environment.
   * Click "Select".
 
 Instance Details:
@@ -114,8 +114,10 @@ First commands:
     apt-get update
     apt-get dist-upgrade
     apt-get upgrade
-    apt-get install curl emacs gcc git java7-jdk npm perl python r-base ruby
-    apt-get install apache2 mysql nagios3 postfix postgresql sqlite3 texinfo
+    apt-get install -y curl emacs gcc git java7-jdk npm perl python r-base ruby
+    apt-get install -y apache2 nagios3 postfix texinfo
+    apt-get install -y mysql-client mysql-server
+    apt-get install -y postgresql sqlite3
 
 Install SixArm server stack:
 
@@ -131,7 +133,7 @@ Install ruby-build:
     cd /opt
     git clone git://github.com/sstephenson/ruby-build.git
     cd ruby-build/
-    ./install.sh 
+    ./install.sh
 
 Install ruby:
 
@@ -148,7 +150,7 @@ Gems:
 
 ## Security
 
-In the AWS console, be sure we're using a security group that allows inbound traffic on the ports we want. 
+In the AWS console, be sure we're using a security group that allows inbound traffic on the ports we want.
 
 For example, if we want to run a typical webserver then we need to allow inbound traffic on HTTP port 80.
 
@@ -188,4 +190,3 @@ Append <code>/etc/bash.bashrc</code>
 
     echo "[ -e /etc/environment ] && source /etc/environment" >> /etc/bash.bashrc
     echo "[ -e /etc/bash.aliases ] && source /etc/bash.aliases" >> /etc/bash.bashrc
-
