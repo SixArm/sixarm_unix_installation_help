@@ -114,7 +114,8 @@ First commands:
     apt-get update
     apt-get dist-upgrade
     apt-get upgrade
-    apt-get install -y curl emacs gcc git java7-jdk npm perl python r-base ruby
+    apt-get install -y curl jq less more most
+    apt-get install -y emacs gcc git java7-jdk npm perl python r-base ruby
     apt-get install -y apache2 nagios3 postfix texinfo
     apt-get install -y mysql-client mysql-server
     apt-get install -y postgresql sqlite3
