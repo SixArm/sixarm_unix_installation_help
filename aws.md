@@ -21,24 +21,24 @@ We put all our SSH files into an AWS subdirectory:
 
 Amazon identifies us by X.509 certificate:
 
-   mkdir ~/.ssh/aws/x.509/
+    mkdir ~/.ssh/aws/x.509/
 
 We will add the X.509 certificate (cert) and private key (pk) files with file names like this:
 
-   ~/.ssh/aws/x.509/{date}/cert-FOOBAR.pem
-   ~/.ssh/aws/x.509/{date}/pk-FOOBAR.pem
+    ~/.ssh/aws/x.509/{date}/cert-FOOBAR.pem
+    ~/.ssh/aws/x.509/{date}/pk-FOOBAR.pem
 
 Amazon EC2 uses pem files:
 
-   mkdir ~/.ssh/aws/ec2
+    mkdir ~/.ssh/aws/ec2
 
 We will add the PEM files like this:
 
-   ~/.ssh/aws/ec2/{companyname}-aws-{serveros}-{description}.pem
+    ~/.ssh/aws/ec2/{companyname}-aws-{serveros}-{description}.pem
 
 Example:
 
-   ~/.ssh/aws/ec2/joelparkerhenderson-aws-ubuntu-everything.pem
+    ~/.ssh/aws/ec2/joelparkerhenderson-aws-ubuntu-everything.pem
 
 
 ## Create
