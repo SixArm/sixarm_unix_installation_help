@@ -20,4 +20,4 @@ VERSION=`ruby-build --definitions | grep "^[0-9]\+\.[0-9]\+\.[0-9]\+$" | tail -1
 RUBY_DIR=/opt/ruby
 ruby-build --verbose $VERSION $RUBY_DIR/$VERSION && 
 cd $RUBY_DIR &&
-ln -s $VERSION current
+ln -sfn $VERSION current
