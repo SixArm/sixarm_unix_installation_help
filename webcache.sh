@@ -67,3 +67,10 @@ $mirror guides http://guides.rubyonrails.org
 # Ruby Minitest
 mkdir -p $top/cs/ruby/minitest && cd $_ 
 curl -s http://mattsears.com/articles/2011/12/10/minitest-quick-reference -o minitest-quick-reference-by-matt-sears.html
+
+# Apple developer library
+mkdir -p $top/cs/apple && cd $_ 
+$mirror https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/AVFoundationPG/AVFoundationPG.pdf
+$mirror https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/CameraAndPhotoLib_TopicsForIOS/CameraAndPhotoLib_TopicsForIOS.pdf  
+$mirror https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/InstrumentsUserGuide.pdf 
+
