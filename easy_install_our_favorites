@@ -1,3 +1,12 @@
+# httpie: a command line web client, similar to `curl`
+# https://github.com/jakubroztocil/httpie
 sudo easy_install httpie
+
+# percol: command line interactive filtering, simlar to `grep`
+# https://github.com/mooz/percol
 sudo easy_install percol
+
+# pip: python installer for packages, similar to ruby `gem`
+# https://github.com/pypa/pip
 sudo easy_install pip
+
