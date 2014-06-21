@@ -114,7 +114,7 @@ First commands:
     apt-get update
     apt-get dist-upgrade
     apt-get upgrade
-    apt-get install -y curl jq less more most
+    apt-get install -y curl jq less most
     apt-get install -y emacs gcc git
     apt-get install -y default-jdk default-jre golang npm perl python r-base ruby
     apt-get install -y apache2 nagios3 postfix texinfo
