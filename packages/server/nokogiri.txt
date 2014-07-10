@@ -1,4 +1,9 @@
 build-essential gcc 
-ruby1.8-dev
-libxml2-dev libxslt1-dev
+libxml2-dev libxslt-dev
+
+# Ruby development headers
+#   * EOL: ruby1.8-dev
+#   * EOL: ruby1.9.1-dev
+#   * Included: ruby2.0-dev
+ruby-all-dev
 
