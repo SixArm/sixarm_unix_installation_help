@@ -1,13 +1,10 @@
-## Virualbox
+# Virualbox
+
+
+## Intro
 
 Download various operating system installers:
 http://download.virtualbox.org/virtualbox/
-
-RHEL 6:
-http://download.virtualbox.org/virtualbox/4.1.12/VirtualBox-4.1-4.1.12_77245_rhel6-1.x86_64.rpm
-
-Ubuntu 12.04:
-http://download.virtualbox.org/virtualbox/4.1.12/virtualbox-4.1_4.1.12-77245~Ubuntu~precise_i386.deb
 
 Guides:
 
@@ -26,8 +23,32 @@ ISO downloads:
 
 The Guest Additions are designed to be installed inside a virtual machine after the guest operating system has been installed. They consist of device drivers and system applications that optimize the guest operating system for better performance and usability. 
 
+<a href="http://www.virtualbox.org/manual/ch04.html#idp55630656">Guest Additions</a> manual 
+
 After installing an OS:
 
   * Virtualbox > Devices > Install Guest Additions...
 
-<a href="http://www.virtualbox.org/manual/ch04.html#idp55630656">Guest Additions</a> manual 
+On Debian:
+
+    sudo apt-get install virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
+
+  * Using Ubuntu inside VirtualBox on Win7 you need to reboot Ubuntu after the virtualbox-guest-dkms install before resizing will work.
+
+
+### Gotchas
+
+If window resize fails:
+
+  * Install the Guest Additions, described above.
+  * Use host+G or the menu option under View > Auto-resize Guest Display.
+
+If window resize still fails, you can tell VirtualBox to use a resolution you like.
+
+  * Shutdown VirtualBox.
+  * In a terminal shell, type your resolution (e.g. 1600,1200)
+
+     VBoxManage setextradata global GUI/MaxGuestResolution 1600,1200
+
+  * This should maximize all screens to full 100% on all guest os's
+
