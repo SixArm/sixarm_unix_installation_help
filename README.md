@@ -1,4 +1,4 @@
-<h1>.SixArm.com » Unix » <br> Installation help notes for our internal systems
+# SixArm.com » Unix » <br> Installation help notes for our internal systems
 
 Read me first:
 
@@ -39,7 +39,7 @@ Applications:
   * <a href="gem-sources.txt">gem-sources.txt</a> for Ruby gem sources
   * <a href="git_branch_parser.sh">git_branch_parser.sh</a> (better to use oh-my-zsh if available)
   * <a href="sublime.md">sublime.md</a> for Sublime Text editor
-  
+  * <a href="https://www.gnu.org/software/datamash/">DataMash</a> for command-line statistics
 Clones:
 
   * <a href="git_projects.txt">git_projects.txt</a> we use
