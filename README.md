@@ -33,7 +33,6 @@ Languages:
         
 Applications:
 
-  * <a href="chandler.txt">chandler.txt</a>
   * <a href="emacs.md">emacs.md</a> (better to use emacs starter kit if available)
   * <a href="gcc-install-from-scratch.md">gcc-install-from-scratch.md</a> for GCC in extreme atypcal cases
   * <a href="gem-sources.txt">gem-sources.txt</a> for Ruby gem sources
