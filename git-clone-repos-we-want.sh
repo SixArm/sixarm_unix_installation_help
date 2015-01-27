@@ -1,4 +1,7 @@
 cd /opt
+git clone https://github.com/shellfire-dev/shellfire
+
+cd /opt/sixarm
 git clone https://github.com/SixArm/sixarm_debian_dpkg_scripts.git
 git clone https://github.com/SixArm/sixarm_htx.git
 git clone https://github.com/SixArm/sixarm_gem_scripts.git
@@ -9,3 +12,5 @@ git clone https://github.com/SixArm/sixarm_ruby_gem_scripts.git
 git clone https://github.com/SixArm/sixarm_ruby_gemforge.git
 git clone https://github.com/SixArm/sixarm_strategem.git
 git clone https://github.com/SixArm/sixarm_unix_shell_scripts.git
+
+
