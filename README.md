@@ -1,4 +1,4 @@
-# SixArm.com » Unix » <br> Installation help notes for our internal systems
+# Unix » <br> Installation help notes for our internal systems
 
 Read me first:
 
